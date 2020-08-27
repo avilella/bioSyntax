@@ -1,0 +1,37 @@
+// Zappo Style File -- less
+// bioSyntax v0.1
+
+// Header
+header black b ;
+comment gray i ;
+
+//     14 // Amino Acid Coloring (CLUSTALX)
+//     15 aaHydro brightorange ; // A I L M F W V
+//     16 aaPos red ;  // K R
+//     17 aaNeg cyan ; // E D
+//     18 aaPol green ; // N Q S T
+//     19 aaCys red ; // C (supposed to be pink)
+//     20 aaGly orange ; // G
+//     21 aaPro pink ; // P
+//     22 aaAro purple ; // H Y
+
+zaA brightorange ;
+zaC red ;
+zaD cyan ;
+zaE cyan ;
+zaF brightorange ;
+zaG orange ;
+zaH purple ;
+zaI brightorange ;
+zaK red ;
+zaL brightorange ;
+zaM brightorange ;
+zaN green ;
+zaP pink ;
+zaQ green ;
+zaR red ;
+zaS green ;
+zaT green ;
+zaV brightorange ;
+zaW brightorange ;
+zaY purple ;

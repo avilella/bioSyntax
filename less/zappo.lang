@@ -1,0 +1,44 @@
+# Fasta language definition file for less pipe
+# bioSyntax v0.1
+# Depends on fasta.style + bioSyntax.outlang
+
+faheader start ">"
+
+environment push1 start '^(?=[A-Za-z\-\_])' begin
+  drop = '$' exitall # stops multi-line searching
+  chr = '^\S+'
+  
+  # TODO make full range; currently 0-100 by ~200s
+  environment push2 = '\t?' begin
+    drop = '(?=$)' exitall
+    zaA = '[A]++'
+    zaB = '[B]++'
+    zaC = '[C]++'
+    zaD = '[D]++'
+    zaE = '[E]++'
+    zaF = '[F]++'
+    zaG = '[G]++'
+    zaH = '[H]++'
+    zaI = '[I]++'
+    zaK = '[K]++'
+    zaL = '[L]++'
+    zaM = '[M]++'
+    zaN = '[N]++'
+    zaP = '[P]++'
+    zaQ = '[Q]++'
+    zaR = '[R]++'
+    zaS = '[S]++'
+    zaT = '[T]++'
+    zaV = '[V]++'
+    zaW = '[W]++'
+    zaY = '[Y]++'
+    zaZ = '[Z]++'
+    zaX = '[X]++'
+    zaGap = '[-]++'
+
+    environment push3 = '\t?' begin
+      drop = '(?=$)' exitall
+
+    end # col3
+  end # col2
+end # bed data section
